@@ -1,0 +1,191 @@
+//INDEX
+
+@media only screen and (max-width: 680px){
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;}
+
+}
+
+//GALERIA
+
+@media (max-width:800px){
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+
+   }
+    
+}
+@media (max-width:500px){
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr) ;
+        
+    }
+    .container-img .box-img{
+       height: 200px;
+
+   }
+    
+}
+
+//CONTACTOS
+
+@media  (max-width: 850px){
+    .formulario{
+        padding: 2rem;
+        
+        form{
+            width: 400px;
+            }
+            
+    }
+    }
+    
+@media (max-width: 500px){
+
+    h1{
+        font-size: 3rem;
+    }
+    
+    .formulario{
+        padding: 2rem;
+        
+        form{
+            width: 300px;
+            }
+            
+    }
+    
+
+}
+
+//PERSONAJES
+
+@media only screen and (max-width: 680px){
+    .lista-personajes{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .tarjeta-personajes{
+            height: 300px;
+            width: 250px;
+            margin-top: 2rem;
+            }
+    }
+}
+@media only screen and (min-width: 680px) and (max-width: 850px){
+    .lista-personajes{
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-content: center;
+    }
+    
+}
+@media only screen and (max-width: 1920px) and (min-width: 850px){
+    .lista-personajes{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+//TEMPORADAS
+
+@media only screen and (max-width: 500px){
+    h1{
+        font-size: 2rem;
+    }
+    .container{
+        .imagen{    
+            img{
+                width: 350px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                align-content: center;
+                margin-top: 20px;
+            }
+        }
+        .videos{
+   
+            grid-template-columns: 1fr;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        
+            iframe{
+                height: 250px;
+                width: 350px;
+            }
+        }
+    }
+}
+
+//POKEDEX
+
+@media  (max-width: 500px){
+    h1{
+        font-size: 2rem;
+      }
+    .container{
+        .lista-pokemon{
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+            justify-content: center;
+        
+         }
+        }
+}
+@media  (max-width: 850px){
+    .container{
+    .lista-pokemon{
+        grid-template-columns:1fr 1fr;
+    }
+}
+}
+// REDES SOCIALES
+
+@media only screen and (max-width: 680px){
+    footer{
+        li{
+            a{
+                font-size:15px;
+            }
+        }
+        .SocRedes{
+            margin-top: 5px;
+            margin-left: 200px;
+            flex-direction: column;
+            display: flex;
+            .icono1:hover{color: #0051ff}
+            .icono2:hover{color: #16fd01}
+            .icono3:hover{color: #db0cc3}
+            .icono4:hover{color: #ff0808}
+            .icono5:hover{color: #f9f9f9}
+        
+            img{
+                width: 35px ;
+            }
+            .fa{
+                margin: 5px;
+                padding: 5px;
+                border-radius: 50%;
+                background-color: transparent;
+                box-shadow: 0 0 30px 0px;
+                transition: .5s;
+            }
+        }    
+    }
+}

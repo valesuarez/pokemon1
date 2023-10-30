@@ -1,0 +1,30 @@
+.container{
+    .imagen{
+        img{
+            width: 500px;
+            margin-top: 20px;
+         }
+    }
+
+    .videos{
+   
+        display: flex;
+        flex-wrap: wrap;
+
+        div{
+            padding: 50px;
+        }
+
+        .titulos{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            color:black;
+            font-weight: bold;
+        }
+
+        iframe{
+            width: 400px;
+            height: 250px;
+        }
+    }
+}

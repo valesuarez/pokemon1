@@ -1,0 +1,57 @@
+.lista-personajes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    .tarjeta-personajes{
+        position:relative;
+        background: rgb(255,0,0);
+background: linear-gradient(45deg, rgba(255,0,0,0.8016456582633054) 24%, rgba(2,0,36,0.8016456582633054) 56%);
+        //background-color: rgba(255, 0, 0, 0.800);
+        //background-image: linear-gradient(to bottom,rgba(255,0,0,0.800), rgba(255, 234, 0, 0.896));
+        border-radius: 20px;
+        margin-top: 3rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        border: solid black;
+        height: 350px;
+        width: 300px;
+        display: flex;
+
+        .img-personaje{
+            width: 100%;
+            height:95%;
+        }
+        .tarjeta-texto{
+            padding: 2rem;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position:absolute;
+            border-radius: 15px;
+            font-weight: bold;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            background-color: rgba(255, 0, 0, 0.800);
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: .5s;
+
+            h2{    
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+       
+            }
+        &:hover .tarjeta-texto{
+            visibility: visible;
+            opacity: 1;
+            
+            }
+        }        
+}

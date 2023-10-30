@@ -1,0 +1,95 @@
+.container{
+    
+    max-width: 1200px;
+    margin: 2rem auto;
+
+    .lista-pokemon{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .tarjeta-pokemon{
+            cursor: pointer;
+            text-decoration: none;
+            padding-top: 20px;
+
+            .tarjeta-pokemon-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                height: 250px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .img-planta{
+                background-color: $planta;
+                 }
+                .img-fuego{
+                    background-color:$fuego;
+                }
+                .img-agua{
+                    background-color: $agua;
+                }
+                .img-bicho{
+                    background-color: $bicho;
+                }
+            .tarjeta-pokemon-info{
+                padding: 15px;
+                background-color: antiquewhite;
+
+                .numero-pokemon{
+                    display: block;
+                    color: red;
+                    margin-bottom: 15px;
+                }
+
+                h2{
+                    color: black;
+                }
+                .tipo{
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 10px;
+
+                    span{
+                        font-size: 12px;
+                        padding: 5px 20px;
+                        border-radius: 5px;
+                        color: aliceblue;
+                    }
+                }
+                 //tipos de pokemon
+
+                .planta{
+                    background-color: $planta;
+                }
+                .veneno{
+                    background-color: $veneno;
+                }
+                .fuego{
+                    background-color: $fuego;
+                }
+                .agua{
+                    background-color:$agua;
+                }
+                .bicho{
+                    background-color:$bicho;
+                }
+                .volador{
+                    background-image:$volador;                
+                }
+           
+            }           
+            
+            &:hover{
+            transform: scale(1.2);
+            }
+        }
+    }
+}
+
+

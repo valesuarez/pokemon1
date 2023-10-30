@@ -1,0 +1,26 @@
+//fuentes
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@font-face {
+font-family: "pokemonHollow";
+src: url(../fuente/pokmon/Pokemon\ Hollow.ttf);
+}
+@font-face {
+    font-family:"pokemonSolid" ;
+    src: url(../fuente/pokmon/Pokemon\ Solid.ttf);
+}
+
+//colores
+$colorPrincipalLetra: rgb(255,204, 0); 
+$colorSombraLetra: rgba(0, 99, 177, 0.8);
+$colorTarjetaIndex:rgba(255, 0, 0, 0.800);
+$radialTarjetaIndex:rgba(255,0,0,0.800), rgba(255, 234, 0, 0.896);
+
+//tipos de pokemon
+
+$planta: rgb(41, 253, 41);
+$veneno: rgb(161, 70, 246);
+$fuego: rgb(250, 113, 34);
+$agua: rgb(0, 208, 255);
+$bicho: green;
+$volador:linear-gradient(rgb(142, 244, 255),blue) ;
