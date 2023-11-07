@@ -131,22 +131,48 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.lista-personajes .ash {
+  background: rgb(255, 0, 0);
+  background: linear-gradient(180deg, rgb(255, 0, 0) 27%, rgb(255, 255, 255) 61%);
+}
+.lista-personajes .misty {
+  background: rgb(255, 115, 0);
+  background: linear-gradient(277deg, rgb(255, 115, 0) 27%, rgb(255, 244, 0) 61%);
+}
+.lista-personajes .brock {
+  background: rgb(198, 197, 197);
+  background: linear-gradient(27deg, rgb(198, 197, 197) 27%, rgb(140, 68, 9) 61%);
+}
+.lista-personajes .gary {
+  background: rgb(8, 136, 252);
+  background: linear-gradient(120deg, rgb(8, 136, 252) 27%, rgb(9, 140, 13) 61%);
+}
+.lista-personajes .oak {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(308deg, rgb(255, 255, 255) 27%, rgb(170, 123, 2) 61%);
+}
+.lista-personajes .joy {
+  background: rgb(255, 228, 240);
+  background: linear-gradient(120deg, rgb(255, 228, 240) 27%, rgb(254, 73, 250) 61%);
+}
 .lista-personajes .tarjeta-personajes {
   position: relative;
-  background: rgb(255, 0, 0);
-  background: linear-gradient(45deg, rgba(255, 0, 0, 0.8016456583) 24%, rgba(2, 0, 36, 0.8016456583) 56%);
+  border: solid black;
   border-radius: 20px;
   margin-top: 3rem;
   margin-right: 2rem;
   margin-left: 2rem;
-  border: solid black;
-  height: 350px;
-  width: 300px;
+  height: 400px;
+  width: 350px;
   display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
 }
 .lista-personajes .tarjeta-personajes .img-personaje {
-  width: 100%;
-  height: 95%;
+  width: 300px;
+  height: 350px;
+  margin-left: 2rem;
 }
 .lista-personajes .tarjeta-personajes .tarjeta-texto {
   padding: 2rem;
@@ -286,6 +312,12 @@ h1 {
 .container .videos iframe {
   width: 400px;
   height: 250px;
+}
+
+H2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .formulario {
@@ -442,7 +474,7 @@ footer .SocRedes .bi {
     border-radius: 20px;
   }
   .tarjetas .tarjeta .tarjeta-img:hover {
-    transform: scale(1);
+    transform: scale(0);
   }
   .tarjetas .roll-in-blurred-left {
     animation: roll-in-blurred-left 0s cubic-bezier(0, 0, 0, 0) both;
