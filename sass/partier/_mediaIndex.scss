@@ -2,12 +2,41 @@
 
 @media only screen and (max-width: 680px){
     .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
         align-items: center;
-        justify-content: center;}
+        justify-content: center;
+        .tarjeta{
+            width: 300px;
+            margin: 1rem;
+            .nombre{
+                font-size:2.5rem;
+                margin-bottom: 10px;
+            }
+            .tarjeta-img{
+                width: 250px;
+                height: 250px;
+                display: block;
+                border-radius: 20px;
+                &:hover{
+                    transform: scale(1);
+                }
+            }
+        }
+        .roll-in-blurred-left {
+            -webkit-animation: roll-in-blurred-left 0s cubic-bezier(0, 0, 0, 0) both;
+                    animation: roll-in-blurred-left 0s cubic-bezier(0, 0, 0, 0) both;
+        }
+        .roll-in-blurred-top {
+            -webkit-animation: roll-in-blurred-top 0s cubic-bezier(0, 0, 0, 0) both;
+                    animation: roll-in-blurred-top 0s cubic-bezier(0, 0, 0, 0) both;
+        }
+        .roll-in-blurred-right {
+            -webkit-animation: roll-in-blurred-right 0s cubic-bezier(0, 0, 0, 0) both;
+                    animation: roll-in-blurred-right 0s cubic-bezier(0, 0, 0, 0) both;
+        }
 
-}
+}}
 
 //GALERIA
 
@@ -103,18 +132,22 @@
 //TEMPORADAS
 
 @media only screen and (max-width: 500px){
-    h1{
-        font-size: 2rem;
-    }
+   
     .container{
-        .imagen{    
-            img{
-                width: 350px;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                align-content: center;
-                margin-top: 20px;
+        .titulo{
+            h1{
+                font-size: 1.7rem;
+                text-shadow: rgb(0, 115, 188) 3px 0px 0px, rgb(0, 115, 188) 2.83487px 0.981584px 0px, rgb(0, 115, 188) 2.35766px 1.85511px 0px, rgb(0, 115, 188) 1.62091px 2.52441px 0px, rgb(0, 115, 188) 0.705713px 2.91581px 0px, rgb(0, 115, 188) -0.287171px 2.98622px 0px, rgb(0, 115, 188) -1.24844px 2.72789px 0px, rgb(0, 115, 188) -2.07227px 2.16926px 0px, rgb(0, 115, 188) -2.66798px 1.37182px 0px, rgb(0, 115, 188) -2.96998px 0.42336px 0px, rgb(0, 115, 188) -2.94502px -0.571704px 0px, rgb(0, 115, 188) -2.59586px -1.50383px 0px, rgb(0, 115, 188) -1.96093px -2.27041px 0px, rgb(0, 115, 188) -1.11013px -2.78704px 0px, rgb(0, 115, 188) -0.137119px -2.99686px 0px, rgb(0, 115, 188) 0.850987px -2.87677px 0px, rgb(0, 115, 188) 1.74541px -2.43999px 0px, rgb(0, 115, 188) 2.44769px -1.73459px 0px, rgb(0, 115, 188) 2.88051px -0.838247px 0px;
+              }
+        }
+        .temporadas{    
+            h2{font-family: "pokemonSolid";
+                color: $colorPrincipalLetra;
+                padding-top: 2rem;
+                margin-bottom: 30px;
+                font-size: 20px;
+                text-shadow: rgb(0, 115, 188) 3.5px 0px 0px, rgb(0, 115, 188) 2.83487px 0.981584px 0px, rgb(0, 115, 188) 2.35766px 1.85511px 0px, rgb(0, 115, 188) 1.62091px 2.52441px 0px, rgb(0, 115, 188) 0.705713px 2.91581px 0px, rgb(0, 115, 188) -0.287171px 2.98622px 0px, rgb(0, 115, 188) -1.24844px 2.72789px 0px, rgb(0, 115, 188) -2.07227px 2.16926px 0px, rgb(0, 115, 188) -2.66798px 1.37182px 0px, rgb(0, 115, 188) -2.96998px 0.42336px 0px, rgb(0, 115, 188) -2.94502px -0.571704px 0px, rgb(0, 115, 188) -2.59586px -1.50383px 0px, rgb(0, 115, 188) -1.96093px -2.27041px 0px, rgb(0, 115, 188) -1.11013px -2.78704px 0px, rgb(0, 115, 188) -0.137119px -2.99686px 0px, rgb(0, 115, 188) 0.850987px -2.87677px 0px, rgb(0, 115, 188) 1.74541px -2.43999px 0px, rgb(0, 115, 188) 2.44769px -1.73459px 0px, rgb(0, 115, 188) 2.88051px -0.838247px 0px;
+                
             }
         }
         .videos{
@@ -123,10 +156,14 @@
             display: grid;
             justify-content: center;
             align-items: center;
+
+            div{
+                padding: 25px;
+            }
         
             iframe{
-                height: 250px;
-                width: 350px;
+                height: 200px;
+                width: 300px;
             }
         }
     }
@@ -155,37 +192,39 @@
     }
 }
 }
+
+//h1
+
+
 // REDES SOCIALES
 
 @media only screen and (max-width: 680px){
     footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        ul{
+            flex-direction: column;
+            gap: 3px;
+        }
         li{
             a{
                 font-size:15px;
             }
         }
         .SocRedes{
-            margin-top: 5px;
-            margin-left: 200px;
+            margin-top: 1rem;
+            margin-bottom: 0rem;
+            margin-left: 100px;
             flex-direction: column;
-            display: flex;
-            .icono1:hover{color: #0051ff}
-            .icono2:hover{color: #16fd01}
-            .icono3:hover{color: #db0cc3}
-            .icono4:hover{color: #ff0808}
-            .icono5:hover{color: #f9f9f9}
+            gap: 5px;
+            height: 10rem;
+            width: 3rem;
+            
         
             img{
                 width: 35px ;
             }
-            .fa{
-                margin: 5px;
-                padding: 5px;
-                border-radius: 50%;
-                background-color: transparent;
-                box-shadow: 0 0 30px 0px;
-                transition: .5s;
-            }
+            
         }    
     }
 }

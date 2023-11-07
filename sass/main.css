@@ -15,6 +15,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: radial-gradient(circle, rgb(255, 175, 0) 0%, rgb(255, 0, 0) 27%, rgb(2, 0, 36) 69%);
 }
 
@@ -69,13 +72,13 @@ header nav .menu li a .aca {
 h1 {
   color: rgb(255, 204, 0);
   font-family: "pokemonSolid";
-  text-shadow: 10px 10px 0px rgba(0, 99, 177, 0.8);
-  font-size: 4rem;
+  text-shadow: rgb(0, 115, 188) 8px 0px 0px, rgb(0, 115, 188) 7.93758px 0.997398px 0px, rgb(0, 115, 188) 7.7513px 1.97923px 0px, rgb(0, 115, 188) 7.44406px 2.93018px 0px, rgb(0, 115, 188) 7.02066px 3.8354px 0px, rgb(0, 115, 188) 6.4877px 4.68078px 0px, rgb(0, 115, 188) 5.85351px 5.45311px 0px, rgb(0, 115, 188) 5.12797px 6.14035px 0px, rgb(0, 115, 188) 4.32242px 6.73177px 0px, rgb(0, 115, 188) 3.44941px 7.21814px 0px, rgb(0, 115, 188) 2.52258px 7.59188px 0px, rgb(0, 115, 188) 1.55638px 7.84714px 0px, rgb(0, 115, 188) 0.565898px 7.97996px 0px, rgb(0, 115, 188) -0.433417px 7.98825px 0px, rgb(0, 115, 188) -1.42597px 7.87189px 0px, rgb(0, 115, 188) -2.39627px 7.63269px 0px, rgb(0, 115, 188) -3.32917px 7.27438px 0px, rgb(0, 115, 188) -4.21013px 6.80256px 0px, rgb(0, 115, 188) -5.02539px 6.22459px 0px, rgb(0, 115, 188) -5.76223px 5.54948px 0px, rgb(0, 115, 188) -6.40915px 4.78778px 0px, rgb(0, 115, 188) -6.95606px 3.95136px 0px, rgb(0, 115, 188) -7.39442px 3.05329px 0px, rgb(0, 115, 188) -7.71739px 2.10757px 0px, rgb(0, 115, 188) -7.91994px 1.12896px 0px, rgb(0, 115, 188) -7.9989px 0.132735px 0px, rgb(0, 115, 188) -7.95304px -0.865561px 0px, rgb(0, 115, 188) -7.78307px -1.85035px 0px, rgb(0, 115, 188) -7.49165px -2.80627px 0px, rgb(0, 115, 188) -7.08333px -3.71839px 0px, rgb(0, 115, 188) -6.56448px -4.57249px 0px, rgb(0, 115, 188) -5.94318px -5.35524px 0px, rgb(0, 115, 188) -5.22915px -6.05442px 0px, rgb(0, 115, 188) -4.43352px -6.65912px 0px, rgb(0, 115, 188) -3.5687px -7.15991px 0px, rgb(0, 115, 188) -2.6482px -7.54898px 0px, rgb(0, 115, 188) -1.68637px -7.82024px 0px, rgb(0, 115, 188) -0.698222px -7.96947px 0px, rgb(0, 115, 188) 0.300817px -7.99434px 0px, rgb(0, 115, 188) 1.29516px -7.89446px 0px, rgb(0, 115, 188) 2.2693px -7.67139px 0px, rgb(0, 115, 188) 3.20802px -7.32862px 0px, rgb(0, 115, 188) 4.09668px -6.87148px 0px, rgb(0, 115, 188) 4.92142px -6.30711px 0px, rgb(0, 115, 188) 5.66936px -5.64432px 0px, rgb(0, 115, 188) 6.32883px -4.89346px 0px, rgb(0, 115, 188) 6.88954px -4.06623px 0px, rgb(0, 115, 188) 7.34274px -3.17555px 0px, rgb(0, 115, 188) 7.68136px -2.23532px 0px, rgb(0, 115, 188) 7.90012px -1.26021px 0px, rgb(0, 115, 188) 7.9956px -0.265434px 0px;
   text-decoration: none;
   display: grid;
   place-items: center;
   padding-top: 1rem;
   margin-bottom: 30px;
+  font-size: 65px;
 }
 
 .aca {
@@ -85,7 +88,7 @@ h1 {
 .tarjetas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  transition: 2s;
+  height: auto;
 }
 .tarjetas .tarjeta {
   background-color: rgba(255, 0, 0, 0.8);
@@ -96,10 +99,14 @@ h1 {
   border: solid red;
   width: 350px;
 }
-.tarjetas .tarjeta .tarjeta-nombre {
-  width: 300px;
-  height: 75px;
-  margin-bottom: 10px;
+.tarjetas .tarjeta .nombre {
+  color: rgb(255, 204, 0);
+  text-shadow: rgb(0, 115, 188) 4px 0px 0px, rgb(0, 115, 188) 3.87565px 0.989616px 0px, rgb(0, 115, 188) 3.51033px 1.9177px 0px, rgb(0, 115, 188) 2.92676px 2.72656px 0px, rgb(0, 115, 188) 2.16121px 3.36588px 0px, rgb(0, 115, 188) 1.26129px 3.79594px 0px, rgb(0, 115, 188) 0.282949px 3.98998px 0px, rgb(0, 115, 188) -0.712984px 3.93594px 0px, rgb(0, 115, 188) -1.66459px 3.63719px 0px, rgb(0, 115, 188) -2.51269px 3.11229px 0px, rgb(0, 115, 188) -3.20457px 2.39389px 0px, rgb(0, 115, 188) -3.69721px 1.52664px 0px, rgb(0, 115, 188) -3.95997px 0.56448px 0px, rgb(0, 115, 188) -3.97652px -0.432781px 0px, rgb(0, 115, 188) -3.74583px -1.40313px 0px, rgb(0, 115, 188) -3.28224px -2.28625px 0px, rgb(0, 115, 188) -2.61457px -3.02721px 0px, rgb(0, 115, 188) -1.78435px -3.57996px 0px, rgb(0, 115, 188) -0.843183px -3.91012px 0px, rgb(0, 115, 188) 0.150409px -3.99717px 0px, rgb(0, 115, 188) 1.13465px -3.8357px 0px, rgb(0, 115, 188) 2.04834px -3.43574px 0px, rgb(0, 115, 188) 2.83468px -2.82216px 0px, rgb(0, 115, 188) 3.44477px -2.03312px 0px, rgb(0, 115, 188) 3.84068px -1.11766px 0px, rgb(0, 115, 188) 3.9978px -0.132717px 0px;
+  font-family: "pokemonSolid";
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
 }
 .tarjetas .tarjeta .tarjeta-img {
   width: 300px;
@@ -149,7 +156,9 @@ h1 {
   display: flex;
   text-align: center;
   align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(255, 204, 0);
+  font-family: "pokemonSolid";
+  text-shadow: rgb(0, 115, 188) 3px 0px 0px, rgb(0, 115, 188) 2.83487px 0.981584px 0px, rgb(0, 115, 188) 2.35766px 1.85511px 0px, rgb(0, 115, 188) 1.62091px 2.52441px 0px, rgb(0, 115, 188) 0.705713px 2.91581px 0px, rgb(0, 115, 188) -0.287171px 2.98622px 0px, rgb(0, 115, 188) -1.24844px 2.72789px 0px, rgb(0, 115, 188) -2.07227px 2.16926px 0px, rgb(0, 115, 188) -2.66798px 1.37182px 0px, rgb(0, 115, 188) -2.96998px 0.42336px 0px, rgb(0, 115, 188) -2.94502px -0.571704px 0px, rgb(0, 115, 188) -2.59586px -1.50383px 0px, rgb(0, 115, 188) -1.96093px -2.27041px 0px, rgb(0, 115, 188) -1.11013px -2.78704px 0px, rgb(0, 115, 188) -0.137119px -2.99686px 0px, rgb(0, 115, 188) 0.850987px -2.87677px 0px, rgb(0, 115, 188) 1.74541px -2.43999px 0px, rgb(0, 115, 188) 2.44769px -1.73459px 0px, rgb(0, 115, 188) 2.88051px -0.838247px 0px;
   position: absolute;
   border-radius: 15px;
   font-weight: bold;
@@ -253,13 +262,17 @@ h1 {
   transform: scale(1.2);
 }
 
-.container .imagen img {
-  width: 500px;
-  margin-top: 20px;
+.container .temporadas h2 {
+  font-family: "pokemonSolid";
+  color: rgb(255, 204, 0);
+  padding-top: 2rem;
+  margin-bottom: 30px;
+  font-size: 35px;
+  text-shadow: rgb(0, 115, 188) 8px 0px 0px, rgb(0, 115, 188) 7.93758px 0.997398px 0px, rgb(0, 115, 188) 7.7513px 1.97923px 0px, rgb(0, 115, 188) 7.44406px 2.93018px 0px, rgb(0, 115, 188) 7.02066px 3.8354px 0px, rgb(0, 115, 188) 6.4877px 4.68078px 0px, rgb(0, 115, 188) 5.85351px 5.45311px 0px, rgb(0, 115, 188) 5.12797px 6.14035px 0px, rgb(0, 115, 188) 4.32242px 6.73177px 0px, rgb(0, 115, 188) 3.44941px 7.21814px 0px, rgb(0, 115, 188) 2.52258px 7.59188px 0px, rgb(0, 115, 188) 1.55638px 7.84714px 0px, rgb(0, 115, 188) 0.565898px 7.97996px 0px, rgb(0, 115, 188) -0.433417px 7.98825px 0px, rgb(0, 115, 188) -1.42597px 7.87189px 0px, rgb(0, 115, 188) -2.39627px 7.63269px 0px, rgb(0, 115, 188) -3.32917px 7.27438px 0px, rgb(0, 115, 188) -4.21013px 6.80256px 0px, rgb(0, 115, 188) -5.02539px 6.22459px 0px, rgb(0, 115, 188) -5.76223px 5.54948px 0px, rgb(0, 115, 188) -6.40915px 4.78778px 0px, rgb(0, 115, 188) -6.95606px 3.95136px 0px, rgb(0, 115, 188) -7.39442px 3.05329px 0px, rgb(0, 115, 188) -7.71739px 2.10757px 0px, rgb(0, 115, 188) -7.91994px 1.12896px 0px, rgb(0, 115, 188) -7.9989px 0.132735px 0px, rgb(0, 115, 188) -7.95304px -0.865561px 0px, rgb(0, 115, 188) -7.78307px -1.85035px 0px, rgb(0, 115, 188) -7.49165px -2.80627px 0px, rgb(0, 115, 188) -7.08333px -3.71839px 0px, rgb(0, 115, 188) -6.56448px -4.57249px 0px, rgb(0, 115, 188) -5.94318px -5.35524px 0px, rgb(0, 115, 188) -5.22915px -6.05442px 0px, rgb(0, 115, 188) -4.43352px -6.65912px 0px, rgb(0, 115, 188) -3.5687px -7.15991px 0px, rgb(0, 115, 188) -2.6482px -7.54898px 0px, rgb(0, 115, 188) -1.68637px -7.82024px 0px, rgb(0, 115, 188) -0.698222px -7.96947px 0px, rgb(0, 115, 188) 0.300817px -7.99434px 0px, rgb(0, 115, 188) 1.29516px -7.89446px 0px, rgb(0, 115, 188) 2.2693px -7.67139px 0px, rgb(0, 115, 188) 3.20802px -7.32862px 0px, rgb(0, 115, 188) 4.09668px -6.87148px 0px, rgb(0, 115, 188) 4.92142px -6.30711px 0px, rgb(0, 115, 188) 5.66936px -5.64432px 0px, rgb(0, 115, 188) 6.32883px -4.89346px 0px, rgb(0, 115, 188) 6.88954px -4.06623px 0px, rgb(0, 115, 188) 7.34274px -3.17555px 0px, rgb(0, 115, 188) 7.68136px -2.23532px 0px, rgb(0, 115, 188) 7.90012px -1.26021px 0px, rgb(0, 115, 188) 7.9956px -0.265434px 0px;
 }
 .container .videos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .container .videos div {
   padding: 50px;
@@ -280,7 +293,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 .formulario form {
   font-family: Arial, Helvetica, sans-serif;
@@ -347,22 +360,27 @@ h1 {
 }
 
 footer {
-  margin-top: 2rem;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
   border-top: solid red;
-  display: flex;
   background-color: rgba(255, 0, 0, 0.5);
 }
-footer li {
-  margin-top: 10px;
+footer ul {
+  display: flex;
+  gap: 1rem;
+}
+footer ul li {
   list-style-type: none;
+  margin-top: 10px;
 }
-footer li a {
-  text-decoration: none;
+footer ul li a {
   font-size: 15px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
   color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-footer li a:hover {
+footer ul li a:hover {
   color: #fef900;
 }
 footer .SocRedes {
@@ -371,8 +389,10 @@ footer .SocRedes {
   align-items: center;
   background-color: black;
   height: 3rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 10px;
+  width: 14rem;
 }
 footer .SocRedes a {
   text-decoration: none;
@@ -402,10 +422,36 @@ footer .SocRedes .bi {
 
 @media only screen and (max-width: 680px) {
   .tarjetas {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
+  }
+  .tarjetas .tarjeta {
+    width: 300px;
+    margin: 1rem;
+  }
+  .tarjetas .tarjeta .nombre {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .tarjetas .tarjeta .tarjeta-img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 20px;
+  }
+  .tarjetas .tarjeta .tarjeta-img:hover {
+    transform: scale(1);
+  }
+  .tarjetas .roll-in-blurred-left {
+    animation: roll-in-blurred-left 0s cubic-bezier(0, 0, 0, 0) both;
+  }
+  .tarjetas .roll-in-blurred-top {
+    animation: roll-in-blurred-top 0s cubic-bezier(0, 0, 0, 0) both;
+  }
+  .tarjetas .roll-in-blurred-right {
+    animation: roll-in-blurred-right 0s cubic-bezier(0, 0, 0, 0) both;
   }
 }
 @media (max-width: 800px) {
@@ -474,16 +520,17 @@ footer .SocRedes .bi {
   }
 }
 @media only screen and (max-width: 500px) {
-  h1 {
-    font-size: 2rem;
+  .container .titulo h1 {
+    font-size: 1.7rem;
+    text-shadow: rgb(0, 115, 188) 3px 0px 0px, rgb(0, 115, 188) 2.83487px 0.981584px 0px, rgb(0, 115, 188) 2.35766px 1.85511px 0px, rgb(0, 115, 188) 1.62091px 2.52441px 0px, rgb(0, 115, 188) 0.705713px 2.91581px 0px, rgb(0, 115, 188) -0.287171px 2.98622px 0px, rgb(0, 115, 188) -1.24844px 2.72789px 0px, rgb(0, 115, 188) -2.07227px 2.16926px 0px, rgb(0, 115, 188) -2.66798px 1.37182px 0px, rgb(0, 115, 188) -2.96998px 0.42336px 0px, rgb(0, 115, 188) -2.94502px -0.571704px 0px, rgb(0, 115, 188) -2.59586px -1.50383px 0px, rgb(0, 115, 188) -1.96093px -2.27041px 0px, rgb(0, 115, 188) -1.11013px -2.78704px 0px, rgb(0, 115, 188) -0.137119px -2.99686px 0px, rgb(0, 115, 188) 0.850987px -2.87677px 0px, rgb(0, 115, 188) 1.74541px -2.43999px 0px, rgb(0, 115, 188) 2.44769px -1.73459px 0px, rgb(0, 115, 188) 2.88051px -0.838247px 0px;
   }
-  .container .imagen img {
-    width: 350px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    margin-top: 20px;
+  .container .temporadas h2 {
+    font-family: "pokemonSolid";
+    color: rgb(255, 204, 0);
+    padding-top: 2rem;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-shadow: rgb(0, 115, 188) 3.5px 0px 0px, rgb(0, 115, 188) 2.83487px 0.981584px 0px, rgb(0, 115, 188) 2.35766px 1.85511px 0px, rgb(0, 115, 188) 1.62091px 2.52441px 0px, rgb(0, 115, 188) 0.705713px 2.91581px 0px, rgb(0, 115, 188) -0.287171px 2.98622px 0px, rgb(0, 115, 188) -1.24844px 2.72789px 0px, rgb(0, 115, 188) -2.07227px 2.16926px 0px, rgb(0, 115, 188) -2.66798px 1.37182px 0px, rgb(0, 115, 188) -2.96998px 0.42336px 0px, rgb(0, 115, 188) -2.94502px -0.571704px 0px, rgb(0, 115, 188) -2.59586px -1.50383px 0px, rgb(0, 115, 188) -1.96093px -2.27041px 0px, rgb(0, 115, 188) -1.11013px -2.78704px 0px, rgb(0, 115, 188) -0.137119px -2.99686px 0px, rgb(0, 115, 188) 0.850987px -2.87677px 0px, rgb(0, 115, 188) 1.74541px -2.43999px 0px, rgb(0, 115, 188) 2.44769px -1.73459px 0px, rgb(0, 115, 188) 2.88051px -0.838247px 0px;
   }
   .container .videos {
     grid-template-columns: 1fr;
@@ -491,9 +538,12 @@ footer .SocRedes .bi {
     justify-content: center;
     align-items: center;
   }
+  .container .videos div {
+    padding: 25px;
+  }
   .container .videos iframe {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
   }
 }
 @media (max-width: 500px) {
@@ -513,40 +563,28 @@ footer .SocRedes .bi {
   }
 }
 @media only screen and (max-width: 680px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer ul {
+    flex-direction: column;
+    gap: 3px;
+  }
   footer li a {
     font-size: 15px;
   }
   footer .SocRedes {
-    margin-top: 5px;
-    margin-left: 200px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    margin-left: 100px;
     flex-direction: column;
-    display: flex;
-  }
-  footer .SocRedes .icono1:hover {
-    color: #0051ff;
-  }
-  footer .SocRedes .icono2:hover {
-    color: #16fd01;
-  }
-  footer .SocRedes .icono3:hover {
-    color: #db0cc3;
-  }
-  footer .SocRedes .icono4:hover {
-    color: #ff0808;
-  }
-  footer .SocRedes .icono5:hover {
-    color: #f9f9f9;
+    gap: 5px;
+    height: 10rem;
+    width: 3rem;
   }
   footer .SocRedes img {
     width: 35px;
-  }
-  footer .SocRedes .fa {
-    margin: 5px;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: transparent;
-    box-shadow: 0 0 30px 0px;
-    transition: 0.5s;
   }
 }
 /* ----------------------------------------------
